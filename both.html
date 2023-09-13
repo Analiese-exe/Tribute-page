@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frida Khalo</title>
+    <link rel="stylesheet" href="./tribute.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <style>
+        *{
+    border: 1px solid re
+}
+main{
+    background-color: rgb(228, 228, 229);
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    width: 90%;
+    margin: 1em auto;
+    border-radius: 4px;
+    padding: 1em;
+}
+body{
+    background-color: rgb(61, 60, 60);
+}
+.title{
+    text-align: center;
+}
+.title > h1{
+    font-weight: 900;
+    font-size: 3.5em;
+}
+.img-div{
+    background-color: white;
+    padding: 1em;
+    max-width: 50%;
+    margin: auto;
+   
+}
+.img-div > img{
+   max-width: 95%;
+   max-height: 10%;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   margin: 0.5em auto;
+   display: block;
+}
+#img-caption{
+    max-width: 50em;
+    margin-top: 1.3em;
+    margin: 1em auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+}
+li{
+    margin: 1.5em auto;
+    font-size: 1.3em;
+    width: 80%;
+}
+span{
+    font-weight: bolder;
+}
+.masterpiece{
+    text-align: center;
+    font-weight: 900;
+    font-size: 3em;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+hr{
+    height: 3px;
+    width: 80%;
+}
+.paintings {
+    column-count: auto;
+    column-gap: 10px;
+    margin: 0 auto;
+    column-width: auto;
+}
+
+
+.paintings > figure > img {
+    max-height: 25em;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.paintings > figure > figcaption {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    font-size: 1.1em;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+.quotes{
+    margin: 20px auto;
+    font-size: 1.3em;
+    text-align: center;
+}
+.tribute-link{
+    margin: 1.3em auto;
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: 900;
+}
+a{
+    color: rgb(114, 76, 76);
+}
+
+@media  (min-width:600px) {
+    .paintings {
+        column-count: 2;
+        gap: 5px;
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width:500px){
+    html{
+        font-size:12px;
+    }
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="title">
+            <h1>Frida Khalo</h1>
+            <h3>The Mexican artist known for her self-portraits and works inspired by Mexican culture. </h3>
+        </div>
+        <figure class="img-div">
+            <img src="https://th.bing.com/th/id/OIP.a3QBWqctM_ZDA_5metd_TAHaI4?pid=ImgDet&w=720&h=864&rs=1" alt="Frida Khalo" id="image">
+        </figure>
+        <figcaption id="img-caption">
+            Frida Kahlo was a Mexican painter known for her many portraits, self-portraits,
+             and works inspired by the nature and artifacts of Mexico, who employed a naïve folk
+              art style to explore questions of identity, postcolonialism, gender, class, and race 
+              in Mexican society¹. 
+        </figcaption>
+        <article id="tribute-info">
+          <ul>
+            <li><span>1925:</span> Kahlo began to paint while recovering from a near-fatal bus accident</li>
+            <li><span>1927:</span> Kahlo joined the Mexican Communist Party</li>
+            <li><span>1929:</span> Kahlo married fellow Mexican artist Diego Rivera</li>
+            <li><span>1938:</span> Kahlo had her first solo exhibition at the Julien Levy Gallery in New York, arranged by surrealist artist André Breton</li>
+            <li><span>1939:</span> Kahlo had another solo exhibition in Paris. The Louvre purchased a painting from Kahlo, The Frame, making her the first Mexican artist to be featured in their collection</li>
+          </ul>
+        </article>
+        <h1 class="masterpiece">Masterpieces by Frida Khalo</h1>
+        <hr>
+        <div class="paintings">
+
+            <figure>
+                <img src="https://th.bing.com/th/id/R.e6709eecb07aa9ded52dbbb6b97524e5?rik=icZpCMSADE9IOA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-hDJIkRcpcsg%2fTYolcmANnOI%2fAAAAAAAAACA%2fBgqxR_b-0o0%2fs1600%2ffrida_kahlo_le_due_frida1.jpg&ehk=1zCXYIkEs4UR8d7nFSM67y2d%2f6EPsySGUCdyv8m%2bhQo%3d&risl=&pid=ImgRaw&r=0" alt="The two fridas">
+            
+            <figcaption>The Two Fridas (1939)</figcaption>
+        </figure>
+            <figure>
+                <img src="https://th.bing.com/th/id/R.d4164cfa1d75aed83a68c92a7a9c952e?rik=3s2H0VlD4xFLJA&riu=http%3a%2f%2fathenaposters.ca%2fwp-content%2fuploads%2f2017%2f08%2f2400-0802-Self-Portrait-with-Thorn-Necklace-and-Hummingbird-Frida-Kahlo.jpg&ehk=UlxGOVacuVK3OpdY6IK8Scyg426EvhRSy6F5vOpr%2brM%3d&risl=&pid=ImgRaw&r=0" alt="Self Portrait with thorn necklace and hummingbird">
+           
+            <figcaption>Self Portrait with thorn necklace and hummingbird (1940)</figcaption>
+        </figure>
+            <figure>
+                <img src="https://learnodo-newtonic.com/wp-content/uploads/2014/12/The-Broken-Column-1944-Frida-Kahlo.webp" alt="The Broken Column">
+         
+            <figcaption>The broken column (1944)</figcaption>
+        </figure>
+            <figure>
+                <img src="https://th.bing.com/th/id/R.e85c98d0284037b3b648837783728b64?rik=qSMIK9ahx%2b66qw&riu=http%3a%2f%2fpaintingandframe.com%2fart-imgs%2ffrida_kahlo%2fthe_wounded_deer_1946-13579.jpg&ehk=LuB3U0YPF09Ph2L9EEoh5BDG1r%2bW0iTd80Lwf4BewU8%3d&risl=&pid=ImgRaw&r=0" alt="The wounded deer">
+            
+            <figcaption>The wounded deer (1946)</figcaption>
+        </figure>
+            <figure>
+                <img src="https://c1.staticflickr.com/5/4030/4261567061_c0345829e3_b.jpg" alt="Self Portrait with cropped hair">
+           
+            <figcaption>Self Portrait with cropped hair (1940)</figcaption>
+        </figure>
+            <figure>
+                <img src="https://th.bing.com/th/id/OIP.PwWsqn7D4fBRFt2lUMy2uQHaJE?pid=ImgDet&rs=1" alt="The chick">
+        
+            <figcaption>The Chick (1945)</figcaption>
+        </figure>
+            <figure>
+                <img src="https://th.bing.com/th/id/OIP.tMT7uFSfyGYyInMemKPxqwHaJs?pid=ImgDet&rs=1" alt="Me and my Parrots">
+         
+            <figcaption>Me and my parrots (1941)</figcaption>
+        </figure>
+            <figure>
+                <img src="https://i.pinimg.com/736x/af/10/cf/af10cf67a151d02030bee83ba2046c1f.jpg" alt="What the water gave me">
+          
+            <figcaption>What the water gave me (1938)</figcaption>
+        </figure>
+        </div>
+        <div class="quotes">
+            <i>"I paint flowers so they will not die."
+                -Frida Khalo.
+            </i>
+        </div>
+        <div class="tribute-link">
+            <i>To know more about this amazing artist, visit this <a href="https://en.wikipedia.org/wiki/Frida_Kahlo">Wikepedia page.</a></i>
+        </div>
+    </main>
+</body>
+</html>
